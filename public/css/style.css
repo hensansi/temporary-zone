@@ -1,0 +1,392 @@
+
+
+/****** Generic classes (body, a, p, h1, etc.) *********/
+html,body {
+  color:#000;
+  height:100%;
+  font-family: "Fira", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+
+a:link,a:visited{
+  color: #000;
+}
+
+.pad_left{
+
+}
+
+.cf:after{
+  clear:both;
+  content:"";
+  display:block;
+}
+
+
+
+
+/****** header *********/
+header{
+  cursor:default;
+  padding-top:1.7em;
+  position:fixed;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 1;
+}
+
+header h1{
+  background: rgba(255,255,255,0.95);
+  clear:both;
+  color:black;
+  float:left;
+  font-size: 2.1em;
+  font-weight: 200;
+  padding-top: 0.2em;
+  padding-right: 0.4em;
+}
+
+header h1 span{
+  color:#e40000;
+}
+
+header h2{
+    background: rgba(255,255,255,0.95);
+
+  float:left;
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 0.3em 0.8em 0.1em 0em;
+
+}
+
+header a:hover{
+  font-weight:700; 
+}
+
+.breadcrumb{
+  font-weight: 300;
+}
+
+header ul,header h1{
+  margin-left: 100px;
+}
+
+
+/****** main content *********/
+
+main{
+  height: calc(100% - 117px);
+  position:relative;
+}
+
+.top{
+    top:117px;
+}
+
+
+div.stripe{  
+  padding-left:100px;
+  padding-top: 4%;
+
+}
+
+
+main div{
+  float:left;
+  clear:both;
+  padding:0.7em 0 0.7em 0;
+  text-transform: uppercase;
+
+-webkit-filter:  grayscale(1);
+-moz-filter: grayscale(1);
+-o-filter: grayscale(1);
+-ms-filter: grayscale(1);
+filter: gray;
+
+
+filter: url(../images/filters.svg#grayscale);
+}
+
+
+main div:hover{
+  -webkit-filter:  grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  filter: none;
+}
+
+.bg{
+background-position: center center;
+}
+
+main h1{
+  background: rgba(255,255,255,1);
+  color:#B00000;
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 0.1em 0 0.1em 0.2em;
+}
+
+main h2{
+  background-color: white;
+  clear:both;
+  cursor:default;
+  float:left;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding-right: 1em;
+  padding-top: 0.5%;
+  text-transform: uppercase;
+}
+
+
+main h4{
+  background-color: white;
+  clear:both;
+  font-weight: 400;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  float:left;
+  cursor:default;
+  padding-top: 0.5%;
+}
+
+main h2,main div,main h4{
+  padding-left: 220px;
+}
+
+
+div.bge {
+  position: fixed;
+  top:-10px;
+  left: 500px;
+  right: 0;
+  z-index: 0;
+  display: block;
+  width: 110%;
+  height: 110%;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+section{
+  background: rgba(255,255,255,0.85);
+  box-shadow: 7px 5px  10px 0.3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  margin-left: 100px;
+  margin-right: 50%;
+  padding-top: 117px;
+}
+
+section h2{
+  float:none;
+  color:black;
+  font-weight: 500;
+  background: none;
+  font-size: 1.375em;
+  padding: 1em 1em 0em 30px;
+  text-transform: uppercase;
+
+}
+section h3{
+  font-weight: 500;
+  color:black;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  background: none;
+  padding: 1em 1em 0em 30px;
+}
+
+section h3:last-child{
+  padding-top: 3em;
+}
+
+section p{
+  background: none;
+  font-size: 1.375em;
+  font-weight: 300;
+  padding: 2em 1em 0em 30px;
+  z-index: 1;
+
+}
+
+
+
+section a:link,section a:visited{
+  background: none;
+  text-decoration:underline;
+
+}
+
+section a:hover{
+  font-weight: 600;
+  text-decoration:underline;
+}
+
+
+
+/****** fonts *********/
+
+@font-face {
+font-family: "Fira";
+src: local('Fira-B'), url('../fonts/FiraSans-ExtraBold.woff') format('woff');
+font-weight: 700;
+}
+
+
+@font-face {
+font-family: "Fira";
+src: local('Fira-B'), url('../fonts/FiraSans-Bold.woff') format('woff');
+font-weight: 600;
+}
+
+
+@font-face {
+font-family: "Fira";
+src: url('../fonts/FiraSans-Medium.woff') format('woff');
+font-weight: 500;
+}
+
+@font-face {
+font-family: "Fira";
+src: url('../fonts/FiraSans-Regular.woff') format('woff');
+font-weight: 400;
+}
+
+@font-face {
+font-family: "Fira";
+src: url('../fonts/FiraSans-Light.woff') format('woff');
+font-weight: 300;
+}
+
+
+@font-face {
+font-family: "Fira";
+src: local('Fira-B'), url(../fonts/FiraSans-Hair.woff) format('woff');
+font-weight: 200;
+}
+
+@font-face {
+font-family: "Libertine";
+src: url(../font/LinLibertine_R.woff);
+font-weight: normal;
+}
+
+
+/****** mobile retina *********/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  
+header{
+  position:relative;
+}
+
+header h1{
+  font-size: 6em;
+  font-weight: 200;
+  margin-left: 0;
+  float:none;
+  background:none;
+  text-align:center;
+  padding-right:0;
+  padding-top:0;
+
+
+}
+header ul{
+  display: none;}
+
+  main{
+  height:100%;
+}
+
+.top{
+  top: 0;
+}
+
+main div{
+  font-size: 4vw;
+  padding:0;
+  -webkit-filter:  grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  filter: none;
+  float:none;
+    text-align:center;
+      background: none;
+
+
+}
+
+  
+
+
+main h1{
+  font-weight: 500;
+  padding:0;
+  padding-right: 1.5em;
+  background: none;
+
+}
+
+main h2,main h4{
+  padding-left: 0;
+  float:none;
+    text-align:center;
+
+  font-weight: 300;
+  font-size: 0.7em;
+    background: none;
+
+}
+
+section{
+  margin-right: 0%;
+  padding-top:50px;
+}
+
+section h2{
+  font-weight: 500;
+  padding-left:30px;
+  text-align: left;
+  font-size: 2em;
+
+}
+section h3{
+  font-size: 1.5em;
+}
+
+section p{
+    font-size: 3em;
+
+}
+
+div.stripe{
+  padding-left: 0;
+  width: 100%;
+  padding-bottom: 1.5em;
+}
+
+.bg{
+  background: none !important;;
+}
+
+
+}
+

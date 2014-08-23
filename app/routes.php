@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+
+Route::get('/', 'PagesController@index');
+
+Route::resource('web', 'PortfolioController');
+
+//Route::resource('print', 'PrintController');

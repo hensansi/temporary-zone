@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hensansi
- * Date: 8/23/14
- * Time: 8:13 PM
- */ 
+
+class Category extends Eloquent{
+
+
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = 'categories';
+}
