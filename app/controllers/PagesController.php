@@ -5,7 +5,7 @@ class PagesController extends \BaseController {
 
 	public function index()
 	{
-		$categories = DB::table('category')->get();
+		$categories = DB::table('categories')->get();
 		return View::make('index')->withCategories($categories);
 	}
 	

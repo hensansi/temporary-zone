@@ -10,8 +10,8 @@ class PortfolioController extends \BaseController {
 	public function index()
 	{
 		$category="web";
-		$id_category = DB::select(DB::raw('SELECT id FROM category WHERE LOWER(name)=LOWER (:category);'), array('category' => $category));
-		$works = DB::select(DB::raw('SELECT id,name,client,url,a,descricao FROM work WHERE id_category=:id;'), array('id' => $id_category[0]->id));	
+		$id_category = DB::select(DB::raw('SELECT id FROM categories WHERE LOWER(name)=LOWER (:category);'), array('category' => $category));
+		$works = DB::select(DB::raw('SELECT id,name,client,url,a,descricao FROM works WHERE id_category=:id;'), array('id' => $id_category[0]->id));
 		
 		return View::make('index_w')->withWorks($works);
 	}
