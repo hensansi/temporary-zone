@@ -14,10 +14,12 @@ class CreateMix extends Migration {
 	{
 		Schema::create('mixes', function($table)
         {
-        	$table->integer('id_technology')->unsigned();
-			$table->foreign('id_technology')->references('id')->on('technologies');
-			$table->integer('id_work')->unsigned();
+            #Change the if and put a weak table
+            $table->increments('id');
+            $table->integer('id_work')->unsigned();
 			$table->foreign('id_work')->references('id')->on('works');
+            $table->integer('id_technology')->unsigned();
+            $table->foreign('id_technology')->references('id')->on('technologies');
 			$table->timestamps();
         });
 	}
