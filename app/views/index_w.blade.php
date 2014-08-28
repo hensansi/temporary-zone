@@ -1,13 +1,5 @@
 @extends('layouts.default')
 
-@section('header')
- 	<ul class="breadcrumb">
-        <li><h2>{{ link_to("/","tz") }}</h2></li>
-        <li><h2 class="breadcrumb">web</h2></li>
-    </ul>
-    <h1>Temporary <span>Zone</span></h1>
-@stop
-
 
 @section('content')
    <main class="cf top">

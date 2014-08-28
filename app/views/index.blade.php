@@ -1,12 +1,5 @@
 @extends('layouts.default')
 
-@section('header')
- 	<ul class="breadcrumb">
-        <li><h2>tz</h2></li>
-    </ul>
-    <h1>Temporary <span>Zone</span></h1>
-@stop
-
 
 @section('content')
 <main class="cf top">

@@ -10,14 +10,13 @@
 </head>
 <body>
 
-
     <header>
-        @yield('header')
-  </header>
+        @include('layouts.partials.nav')
+    </header>
 
         @yield('content')
 
-
-
+        @include('layouts.partials.googleAnalytics')
 </body>
+
 </html>

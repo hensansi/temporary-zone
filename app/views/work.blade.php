@@ -2,16 +2,6 @@
 
 @foreach ($work as $work)
 
-@section('header')
- 	<ul class="breadcrumb">
-        <li><h2>{{ link_to("/","TZ") }}</h2></li>
-        <li><h2>{{ link_to("/web","web") }}</h2></li>
-        <li><h2 class="breadcrumb">{{ $work->a }}</h2></li>
-
-    </ul>
-    <h1>Temporary <span>Zone</span></h1>
-@stop
-
 
 @section('content')
 <div class="bge" style="background-image: url(/images/web/{{ $work->a }}.jpg)"></div>
