@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico">
 
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/base.css">
      <link rel="stylesheet" href="/css/perfect-scrollbar.css">
      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
