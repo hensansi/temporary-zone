@@ -2,28 +2,27 @@
 
 
 @section('content')
-   <main class="cf top">
-
-
-     
+    <div class="stripe-list">
         @if (count($works))
     		@foreach ($works as $work)
-            	<div class="cf stripe">
-    			<h2>{{ $work->client }}</h2>
-    			<a href="/web/{{$work->a}}">
-        		<div class="bg" style="background-image:url(/images/web/{{ $work->a }}.jpg)">
-        		<h1 class="text_strip">{{ $work->name }}</h1>
-        		</div></a>
-        		<h4>CSS HTML PHP</h4>
+            	<div class="stripe">
+        			<h2 class="stripe__subinfo">{{ $work->client }}</h2>
+                    <a href="work/{{$work->a}}">
+                        <div class="stripe__thumbnail" style="background-image:url(/images/web/thumbnails/{{ $work->a }}.jpg)"></div>
+                        <div class="stripe__title">
+                            <h1 class="colored-link">{{ $work->name }}</h1>
+                    </div>
+            		</a>
+            		{{--<h4>{{ $work->technologies }}</h4>--}}
         		</div>
         	@endforeach
         @else
-            <div class="cf stripe">
-            <div class="bg">
-            <h1 class="text_strip">There are no works to display</h1>
+            <div class="stripe">
+            <div class="stripe__thumbnail" style="background-color:blue">
+            <h1 class="stripe__title colored-link">There are no works to display</h1>
             </div></a>
-            </div>            
+            </div>
         @endif
-    </main>
+    </div>
 
 @stop

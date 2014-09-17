@@ -13,8 +13,13 @@
 
 
 Route::get('/', 'PagesController@index');
+Route::get('me', 'PagesController@index');
 
-Route::get('web', function()
+Route::get('work', 'PagesController@work');
+Route::get('contact', 'PagesController@contact');
+
+
+Route::get('work/web', function()
 {
     $category="web";
     $id_category = DB::select(DB::raw('SELECT id FROM categories WHERE LOWER(name)=LOWER (:category);'), array('category' => $category));
@@ -23,10 +28,10 @@ Route::get('web', function()
     return View::make('index_w')->withWorks($works);
 });
 
-Route::get('/web/{work}', function($work_a)
+Route::get('work/{work}', function($work_a)
 {
+
     $work = DB::select(DB::raw('SELECT id,name,client,url,a,descricao FROM works WHERE a=:work_a;'), array('work_a' => $work_a));
     return View::make('work')->withWork($work);
 });
-//Route::resource('print', 'PrintController');
 

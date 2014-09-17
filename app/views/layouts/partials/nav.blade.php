@@ -1,8 +1,7 @@
-
-<ul class="breadcrumb">
-        <li><h2>{{ link_to("/","TZ") }}</h2></li>
-        <li><h2>{{ link_to("/web","web") }}</h2></li>
-        <li><h2 class="breadcrumb">none</h2></li>
-
-</ul>
-<h1>Temporary <span>Zone</span></h1>
+<nav>
+<ul>
+    <li @yield('class')>{{ link_to("work","work",array('class' => 'colored-link')) }}</li>
+    <li @yield('class')>{{ link_to("me","me",array('class' => 'colored-link')) }}</li>
+    <li @yield('class')>{{ link_to("contact","contact",array('class' => 'colored-link')) }}</li>
+ </ul>
+</nav>

@@ -38,14 +38,7 @@ class WorksTableSeeder extends Seeder {
             'descricao' => 'This website acted as an archive of performances done during the classes. The program had its base in concrete poetry and it had support weekly shows from various writers, artists and performers.'
         ]);
 
-        Work::create([
-            'name' => 'Museu da Pedra',
-            'client' => 'Internet Technology - University',
-            'url' => 'ti.henriquesilva.pt',
-            'id_category' => 1,
-            'a' => 'museu',
-            'descricao' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum quam eu commodo sollicitudin. Duis sed elementum felis, ornare gravida justo. Etiam vel nisi condimentum, lacinia tortor a, egestas lacus. Suspendisse interdum enim vitae odio efficitur molestie. Proin nec molestie nisl.'
-        ]);
+
 
         Work::create([
             'name' => 'EXP - TV Channel Identity',
@@ -63,16 +56,28 @@ class WorksTableSeeder extends Seeder {
             'url' => 'd3.henriquesilva.pt',
             'id_category' => 1,
             'a' => 'newsletter',
-            'descricao' => ' adipisommode. Proin nec molestie nisl.'
+            'descricao' => 'The project was about transforming a paper newsletter into a virtual one. While trying to maintain its identity and not emulating but transforming the way it could be seen and accessed.'
+        ]);
+    /*
+
+        Work::create([
+            'name' => 'Museu da Pedra',
+            'client' => 'Internet Technology - University',
+            'url' => 'ti.henriquesilva.pt',
+            'id_category' => 1,
+            'a' => 'museu',
+            'descricao' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum quam eu commodo sollicitudin. Duis sed elementum felis, ornare gravida justo. Etiam vel nisi condimentum, lacinia tortor a, egestas lacus. Suspendisse interdum enim vitae odio efficitur molestie. Proin nec molestie nisl.'
         ]);
 
         Work::create([
             'name' => 'Queima 24! - Short Film Contest',
             'client' => 'tvAAC',
-            'url' => 'http://tv.aac.uc.pt/queima24/',
+            'url' => 'tv.aac.uc.pt/queima24/',
             'id_category' => 1,
             'a' => 'queima24',
             'descricao' => 'Built in 2010, this was the initiation into the web development world. With the exception of the javascript navigation, the typo photography and design were made by me.'
         ]);
+
+    */
     }
 }
