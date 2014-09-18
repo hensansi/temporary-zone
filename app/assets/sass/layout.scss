@@ -6,7 +6,7 @@
 //Header
 
 header{
-  padding-top:1.7em;
+  padding-top:2.7em;
   position:fixed;
   text-transform: uppercase;
   width:100%;
@@ -18,16 +18,24 @@ header ul,header h1{
   margin-left: $left_space;
 }
 
+
+nav{
+  float: left;
+}
 nav li{
   background: rgba(255,255,255,0.85);
-  padding: 0.2em 0.7em 0.3em 0.7em;
+padding: 0.5em 0.7em 0.6em 0.7em;
   display:inline-block;
 
 }
 
+nav ul{
+}
+
 nav a{
-  font-size: 0.8em;
-  font-weight: 300;
+  font-size: 1.5em;
+/* line-height: 130%; */
+font-weight: 200;
 }
 
 .link-is-active{
@@ -35,12 +43,11 @@ nav a{
 }
 
 .header__title{
-  background: $bg_txt_color;
-  clear:both;
+    background: rgba(255,255,255,0.5);
+
   float:left;
   font-size: 2.1em;
   font-weight: 200;
-  margin-top: 5px;
   padding-top: 0.2em;
   padding-bottom: 0.15em;
 
@@ -95,7 +102,7 @@ nav a{
   z-index: 5;
   background: rgba(255,255,255,0.85);
   box-shadow: 7px 5px  10px 0.3px rgba(0, 0, 0, 0.1);
-  margin-right: 50%;
+  margin-right: 40%;
   padding-top: $top_space;
   padding-left: $left_space;
   height: 100%;
