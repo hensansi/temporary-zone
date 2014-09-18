@@ -1,0 +1,82 @@
+@import "variables";
+
+/* module.scss */
+
+//Stripe Module
+$stripe_text_pad:220px;
+
+
+.stripe{
+  float:left;
+  clear:both;
+  margin-top: 10%;
+  text-transform: uppercase;
+}
+
+.stripe:first-child{
+  margin-top: 0;
+}
+
+
+.stripe__subinfo{
+  margin-left: $stripe_text_pad;
+  float:left;
+  clear:both;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  font-size: 0.8em;
+  font-weight: 400;
+
+  padding-top: 0.5%;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-bottom: 0.2em;
+}
+
+.stripe a{
+  display:inline-block;
+  height: 100%;
+  float:left;
+  clear:both;
+  position:relative;
+  border: none; 
+
+}
+
+
+.stripe__thumbnail{
+  position: absolute;
+  min-height: 100%;
+  width:$stripe_text_pad;
+  float:left;
+  clear:both; 
+}
+
+
+.stripe__title{
+  border-bottom: none;
+  margin-left: $stripe_text_pad;
+  float:left;
+  color:#000;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 0.25em 0.4em 0.25em 0.4em;
+  line-height: 120%;
+
+}
+
+.stripe__title h1{
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
+
+.stripe__title h1:hover{
+  color: $primary-color;
+  border-bottom: 1px dotted $primary-color;
+}
+
+
+.stripe a{
+  border-bottom: none;
+}

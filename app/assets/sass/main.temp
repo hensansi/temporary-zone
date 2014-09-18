@@ -1,8 +1,6 @@
-$left_space: 100px;
-$top_space: 170px;
+
 
 $bg_txt_color: rgba(255,255,255,0.85);
-$colored_txt: #00F;
 
 
 
@@ -168,52 +166,7 @@ section p{
 
 
 
-/****** fonts *********/
 
-@font-face {
-  font-family: "Fira";
-  src: local('Fira-B'), url('../fonts/FiraSans-ExtraBold.woff') format('woff');
-  font-weight: 700;
-}
-
-
-@font-face {
-  font-family: "Fira";
-  src: local('Fira-B'), url('../fonts/FiraSans-Bold.woff') format('woff');
-  font-weight: 600;
-}
-
-
-@font-face {
-  font-family: "Fira";
-  src: url('../fonts/FiraSans-Medium.woff') format('woff');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Fira";
-  src: url('../fonts/FiraSans-Regular.woff') format('woff');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Fira";
-  src: url('../fonts/FiraSans-Light.woff') format('woff');
-  font-weight: 300;
-}
-
-
-@font-face {
-  font-family: "Fira";
-  src: local('Fira-B'), url(../fonts/FiraSans-Hair.woff) format('woff');
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Libertine";
-  src: url(../font/LinLibertine_R.woff);
-  font-weight: normal;
-}
 
 .text-box{
   background: rgba(255,255,255,0.85);
@@ -232,8 +185,7 @@ section p{
 
 
 .main-background {
-  background: url(/images/index.jpg) no-repeat center center;
-  position: fixed;
+  background: url(/images/index.jpg) no-repeat center center fixed;
   top:-15px;
   left: -15px;
   z-index: 0;
@@ -251,114 +203,7 @@ section p{
 
 
 
-/****** STRIPE MODULE *********/
-$stripe_text_pad:220px;
 
-
-.stripe-list{
-  position:relative;
-  top: $top_space;
-  left: $left_space;
-  z-index: 2;
-}
-
-.stripe{
-  float:left;
-  clear:both;
-  margin-top: 6.5%;
-  text-transform: uppercase;
-}
-
-.stripe:first-child{
-  margin-top: 0;
-}
-
-
-
-.stripe__subinfo{
-  margin-left: $stripe_text_pad;
-  float:left;
-  clear:both;
-  background: rgba(255, 255, 255, 0.5);
-  cursor: default;
-  font-size: 0.8em;
-  font-weight: 400;
-
-  padding-top: 0.5%;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-  padding-bottom: 0.2em;
-}
-
-.stripe a{
-  display:inline-block;
-  height: 100%;
-  float:left;
-  clear:both;
-  position:relative;
-  border: none; 
-
-}
-
-
-
-.colored_link:hover{
-    color: $colored_txt;
-
-}
-
-
-
-.stripe__thumbnail{
-  position: absolute;
-  min-height: 100%;
-  width:$stripe_text_pad;
-  float:left;
-  clear:both; 
-}
-
-
-.stripe__title{
-  border-bottom: none;
-  margin-left: $stripe_text_pad;
-  float:left;
-  color:#000;
-  background: rgba(255, 255, 255, 0.75);
-  font-size: 1.4em;
-  font-weight: 500;
-  padding: 0.25em 0.4em 0.25em 0.4em;
-
-}
-
-.stripe__title h1{
-  color: #000;
-  line-height: 120%;
-  border-bottom: 1px dotted #000;
-  text-decoration: none;
-}
-
-.stripe__title h1:hover{
-  color: $colored_txt;
-  border-bottom: 1px dotted $colored_txt;
-}
-
-
-a{
-  color: #000;
-  line-height: 100%;
-  border-bottom: 1px dotted #000;
-  text-decoration: none;
-}
-
-a:hover{
-  color: $colored_txt;
-  border-bottom: 1px dotted $colored_txt;
-}
-
-
-.stripe a{
-  border-bottom: none;
-}
 /*
 /**
 

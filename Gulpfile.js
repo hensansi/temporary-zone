@@ -1,13 +1,17 @@
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer')
+	concat = require('gulp-concat');
 
 gulp.task('css', function() {
     /**gulp.src('app/assets/sass/main.scss')**/
-      return gulp.src('app/assets/sass/*.scss')
-
-        .pipe(sass({ style: 'expanded' }))
-    	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+    gulp.src('app/assets/sass/*.scss')
+        .pipe(sass({ 
+        noCache : true,
+        style   : "compact"
+    }))
+    	.pipe(autoprefixer("last 5 version", "> 1%", "ie 8", "ie 7"))
+    	.pipe(concat('style.css'))
         .pipe(gulp.dest('public/css'));
 });
 

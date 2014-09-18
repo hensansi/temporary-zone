@@ -1,103 +1,106 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-/****** mobile retina *********/
+body { line-height: 1; }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-  
-header{
-  position:relative;
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* fonts.scss */
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-ExtraBold.woff") format("woff"); font-weight: 700; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Bold.woff") format("woff"); font-weight: 600; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Medium.woff") format("woff"); font-weight: 500; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Regular.woff") format("woff"); font-weight: 400; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Light.woff") format("woff"); font-weight: 300; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url(../fonts/FiraSans-Hair.woff) format("woff"); font-weight: 200; }
+/* base.scss */
+html, body { background: url(/images/index.jpg) no-repeat center center fixed; background-color: #5890ad; background-size: cover; color: #000; font-family: Fira, Helvetica, sans-serif; font-weight: 400; z-index: 0; overflow: hidden; height: 100%; }
+
+a { color: #000; line-height: 120%; border-bottom: 1px dotted #000; text-decoration: none; }
+
+a:hover { color: #00F; border-bottom: 1px dotted #00F; }
+
+{
+"version": 3,
+"mappings": ";;AAKA,0eAYyB,GACxB,MAAM,EAAE,CAAC,EACT,OAAO,EAAE,CAAC,EACV,MAAM,EAAE,CAAC,EACT,SAAS,EAAE,IAAI,EACf,IAAI,EAAE,OAAO,EACb,cAAc,EAAE,QAAQ;;;AAGzB,uFAC2C,GAC1C,OAAO,EAAE,KAAK;;AAEf,IAAK,GACJ,WAAW,EAAE,CAAC;;AAEf,MAAO,GACN,UAAU,EAAE,IAAI;;AAEjB,aAAc,GACb,MAAM,EAAE,IAAI;;AAEb,sDACkB,GACjB,OAAO,EAAE,EAAE,EACX,OAAO,EAAE,IAAI;;AAEd,KAAM,GACL,eAAe,EAAE,QAAQ,EACzB,cAAc,EAAE,CAAC;;;AC5ClB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,uEAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,kEAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,oEAAe,EACpB,WAAW,EAAE,GAAG;AAGlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,qEAAe,EACpB,WAAW,EAAE,GAAG;AAGlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,mEAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,gEAAe,EACpB,WAAW,EAAE,GAAG;;AC9BlB,UAAU,GACT,UAAU,EAAE,oDAAoD,EAChE,gBAAgB,EAAE,OAAO,EACzB,eAAe,EAAE,KAAK,EACtB,KAAK,EAAC,IAAI,EACV,WAAW,ECXC,2BAAI,EDYhB,WAAW,EAAE,GAAG,EAChB,OAAO,EAAC,CAAC,EACT,QAAQ,EAAE,MAAM,EAChB,MAAM,EAAE,IAAI;;AAGb,CAAC,GACC,KAAK,EAAE,IAAI,EACX,WAAW,EAAE,IAAI,EACjB,aAAa,EAAE,eAAe,EAC9B,eAAe,EAAE,IAAI;;AAGvB,OAAO,GACL,KAAK,ECrBS,IAAI,EDsBlB,aAAa,EAAE,eAAyB",
+"sources": ["../_reset.scss","../_fonts.scss","../base.scss","../_variables.scss"],
+"names": [],
+"file": "base.css"
 }
+/* layout.scss */
+header { padding-top: 1.7em; position: fixed; text-transform: uppercase; width: 100%; z-index: 10; }
 
-header h1{
-  font-size: 6em;
-  font-weight: 200;
-  float:none;
-  text-align:center;
-  padding-right:0;
-  padding-top:0;
+header ul, header h1 { margin-left: 100px; }
 
+nav li { background: rgba(255, 255, 255, 0.85); padding: 0.2em 0.7em 0.3em 0.7em; display: inline-block; }
+
+nav a { font-size: 0.8em; font-weight: 300; }
+
+.link-is-active { color: #00F; }
+
+.header__title { background: rgba(255, 255, 255, 0.85); clear: both; float: left; font-size: 2.1em; font-weight: 200; margin-top: 5px; padding-top: 0.2em; padding-bottom: 0.15em; padding-right: 0.2em; padding-left: 0.2em; }
+
+.header__title--colored { color: #00F; }
+
+.container { position: relative; z-index: 5; background: none; overflow: hidden; height: 100%; }
+
+.stripe-list-container { position: relative; margin-top: 170px; margin-left: 100px; z-index: 5; float: left; clear: both; }
+
+.text-box { background: rgba(255, 255, 255, 0.85); position: relative; top: 170px; margin-left: 100px; margin-right: 50%; }
+
+.text-box p { font-size: 1.375em; font-weight: 300; padding: 2em 1em 2em 30px; line-height: 145%; }
+
+.box--full-height { position: relative; z-index: 5; background: rgba(255, 255, 255, 0.85); box-shadow: 7px 5px 10px 0.3px rgba(0, 0, 0, 0.1); margin-right: 50%; padding-top: 170px; padding-left: 100px; height: 100%; }
+
+.box--full-height h2 { float: none; color: black; font-weight: 500; background: none; font-size: 1.375em; padding: 0em 1em 0em 30px; text-transform: uppercase; }
+
+.box--full-height h3 { font-weight: 500; color: black; text-transform: uppercase; font-size: 0.9em; background: none; padding: 1em 1em 0em 30px; }
+
+.box--full-height h3:last-child { padding-top: 3em; }
+
+.box--full-height p { line-height: 145%; background: none; font-size: 1.375em; font-weight: 300; padding: 2em 1em 0em 30px; z-index: 1; }
+
+.bge { position: fixed; top: -10px; left: 500px; right: 0; z-index: 2; display: block; width: 110%; height: 110%; -webkit-filter: blur(3px); filter: blur(3px); }
+
+{
+"version": 3,
+"mappings": ";AAOA,MAAM,GACJ,WAAW,EAAC,KAAK,EACjB,QAAQ,EAAC,KAAK,EACd,cAAc,EAAE,SAAS,EACzB,KAAK,EAAC,IAAI,EACR,OAAO,EAAE,EAAE;;AAIf,oBAAmB,GACjB,WAAW,ECjBA,KAAK;;ADoBlB,MAAM,GACJ,UAAU,EAAE,yBAAsB,EAClC,OAAO,EAAE,uBAAuB,EAChC,OAAO,EAAC,YAAY;;AAItB,KAAK,GACH,SAAS,EAAE,KAAK,EAChB,WAAW,EAAE,GAAG;;AAGlB,eAAe,GACb,KAAK,EC1BS,IAAI;;AD6BpB,cAAc,GACZ,UAAU,EC/BG,yBAAsB,EDgCnC,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,IAAI,EACV,SAAS,EAAE,KAAK,EAChB,WAAW,EAAE,GAAG,EAChB,UAAU,EAAE,GAAG,EACf,WAAW,EAAE,KAAK,EAClB,cAAc,EAAE,MAAM,EAEtB,aAAa,EAAE,KAAK,EACpB,YAAY,EAAE,KAAK;;AAGrB,uBAAuB,GACrB,KAAK,EC5CS,IAAI;;ADgDpB,UAAU,GACR,QAAQ,EAAC,QAAQ,EACjB,OAAO,EAAC,CAAC,EACT,UAAU,EAAE,IAAI,EACd,QAAQ,EAAE,MAAM,EAChB,MAAM,EAAE,IAAI;;AAKhB,sBAAsB,GACpB,QAAQ,EAAC,QAAQ,EACjB,UAAU,EClEA,KAAK,EDmEf,WAAW,ECpEA,KAAK,EDqEhB,OAAO,EAAE,CAAC,EACV,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,IAAI;;AAIZ,SAAS,GACP,UAAU,EAAE,yBAAsB,EAClC,QAAQ,EAAC,QAAQ,EACjB,GAAG,EC7EO,KAAK,ED8Ef,WAAW,EC/EA,KAAK,EDgFhB,YAAY,EAAE,GAAG;;AAGnB,WAAW,GACV,SAAS,EAAE,OAAO,EACjB,WAAW,EAAC,GAAG,EACf,OAAO,EAAE,gBAAgB,EACvB,WAAW,EAAE,IAAI;;AAKrB,iBAAiB,GACf,QAAQ,EAAE,QAAQ,EAClB,OAAO,EAAE,CAAC,EACV,UAAU,EAAE,yBAAsB,EAClC,UAAU,EAAE,qCAAsC,EAClD,YAAY,EAAE,GAAG,EACjB,WAAW,ECjGD,KAAK,EDkGf,YAAY,ECnGD,KAAK,EDoGhB,MAAM,EAAE,IAAI;;AAGd,oBAAoB,GAClB,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,KAAK,EACX,WAAW,EAAE,GAAG,EAChB,UAAU,EAAE,IAAI,EAChB,SAAS,EAAE,OAAO,EAClB,OAAO,EAAE,gBAAgB,EACzB,cAAc,EAAE,SAAS;;AAG3B,oBAAoB,GAClB,WAAW,EAAE,GAAG,EAChB,KAAK,EAAC,KAAK,EACX,cAAc,EAAE,SAAS,EACzB,SAAS,EAAE,KAAK,EAChB,UAAU,EAAE,IAAI,EAChB,OAAO,EAAE,gBAAgB;;AAG3B,+BAA+B,GAC7B,WAAW,EAAE,GAAG;;AAGlB,mBAAmB,GACb,WAAW,EAAE,IAAI,EAErB,UAAU,EAAE,IAAI,EAChB,SAAS,EAAE,OAAO,EAClB,WAAW,EAAE,GAAG,EAChB,OAAO,EAAE,gBAAgB,EACzB,OAAO,EAAE,CAAC;;AAMZ,IAAK,GACH,QAAQ,EAAE,KAAK,EACf,GAAG,EAAC,KAAK,EACT,IAAI,EAAE,KAAK,EACX,KAAK,EAAE,CAAC,EACR,OAAO,EAAE,CAAC,EACV,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI,EACZ,MAAM,EAAE,SAAS",
+"sources": ["../layout.scss","../_variables.scss"],
+"names": [],
+"file": "layout.css"
 }
-header ul{
-  display: none;}
+/* module.scss */
+.stripe { float: left; clear: both; margin-top: 10%; text-transform: uppercase; }
 
-  main{
-  height:100%;
+.stripe:first-child { margin-top: 0; }
+
+.stripe__subinfo { margin-left: 220px; float: left; clear: both; background: rgba(255, 255, 255, 0.5); cursor: default; font-size: 0.8em; font-weight: 400; padding-top: 0.5%; padding-left: 0.4em; padding-right: 0.4em; padding-bottom: 0.2em; }
+
+.stripe a { display: inline-block; height: 100%; float: left; clear: both; position: relative; border: none; }
+
+.stripe__thumbnail { position: absolute; min-height: 100%; width: 220px; float: left; clear: both; }
+
+.stripe__title { border-bottom: none; margin-left: 220px; float: left; color: #000; background: rgba(255, 255, 255, 0.75); font-size: 1.4em; font-weight: 500; padding: 0.25em 0.4em 0.25em 0.4em; line-height: 120%; }
+
+.stripe__title h1 { border-bottom: 1px dotted #000; text-decoration: none; }
+
+.stripe__title h1:hover { color: #00F; border-bottom: 1px dotted #00F; }
+
+.stripe a { border-bottom: none; }
+
+{
+"version": 3,
+"mappings": ";AAQA,OAAO,GACL,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,IAAI,EACV,UAAU,EAAE,GAAG,EACf,cAAc,EAAE,SAAS;;AAG3B,mBAAmB,GACjB,UAAU,EAAE,CAAC;;AAIf,gBAAgB,GACd,WAAW,EAhBI,KAAK,EAiBpB,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,IAAI,EACV,UAAU,EAAE,wBAAwB,EACpC,MAAM,EAAE,OAAO,EACf,SAAS,EAAE,KAAK,EAChB,WAAW,EAAE,GAAG,EAEhB,WAAW,EAAE,IAAI,EACjB,YAAY,EAAE,KAAK,EACnB,aAAa,EAAE,KAAK,EACpB,cAAc,EAAE,KAAK;;AAGvB,SAAS,GACP,OAAO,EAAC,YAAY,EACpB,MAAM,EAAE,IAAI,EACZ,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,IAAI,EACV,QAAQ,EAAC,QAAQ,EACjB,MAAM,EAAE,IAAI;;AAKd,kBAAkB,GAChB,QAAQ,EAAE,QAAQ,EAClB,UAAU,EAAE,IAAI,EAChB,KAAK,EA5CU,KAAK,EA6CpB,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,IAAI;;AAIZ,cAAc,GACZ,aAAa,EAAE,IAAI,EACnB,WAAW,EApDI,KAAK,EAqDpB,KAAK,EAAC,IAAI,EACV,KAAK,EAAC,IAAI,EACV,UAAU,EAAE,yBAAyB,EACrC,SAAS,EAAE,KAAK,EAChB,WAAW,EAAE,GAAG,EAChB,OAAO,EAAE,yBAAyB,EAClC,WAAW,EAAE,IAAI;;AAInB,iBAAiB,GACf,aAAa,EAAE,eAAe,EAC9B,eAAe,EAAE,IAAI;;AAGvB,uBAAuB,GACrB,KAAK,ECnES,IAAI,EDoElB,aAAa,EAAE,eAAyB;;AAI1C,SAAS,GACP,aAAa,EAAE,IAAI",
+"sources": ["../module.scss","../_variables.scss"],
+"names": [],
+"file": "module.css"
 }
-
-.top{
-  top: 0;
-}
-
-main div{
-  font-size: 4vw;
-  padding:0;
-  -webkit-filter:  grayscale(0);
-  -moz-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  filter: none;
-  float:none;
-    text-align:center;
-      background: none;
-
-
-}
-
-  
-
-
-main h1{
-  font-weight: 500;
-  padding:0;
-  padding-right: 1.5em;
-  background: none;
-
-}
-
-main h2,main h4{
-  padding-left: 0;
-  float:none;
-    text-align:center;
-
-  font-weight: 300;
-  font-size: 0.7em;
-    background: none;
-
-}
-
-section{
-  margin-right: 0%;
-  padding-top:50px;
-}
-
-section h2{
-  font-weight: 500;
-  padding-left:30px;
-  text-align: left;
-  font-size: 2em;
-
-}
-section h3{
-  font-size: 1.5em;
-}
-
-section p{
-    font-size: 3em;
-
-}
-
-div.stripe{
-  padding-left: 0;
-  width: 100%;
-  padding-bottom: 1.5em;
-}
-
-.bg{
-  background: none !important;;
-}
-
-
-}
-

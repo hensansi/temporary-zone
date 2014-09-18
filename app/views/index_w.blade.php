@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="stripe-list">
+    <div class="stripe-list-container">
         @if (count($works))
     		@foreach ($works as $work)
             	<div class="stripe">
@@ -10,7 +10,7 @@
                     <a href="work/{{$work->a}}">
                         <div class="stripe__thumbnail" style="background-image:url(/images/web/thumbnails/{{ $work->a }}.jpg)"></div>
                         <div class="stripe__title">
-                            <h1 class="colored-link">{{ $work->name }}</h1>
+                            <h1>{{ $work->name }}</h1>
                     </div>
             		</a>
             		{{--<h4>{{ $work->technologies }}</h4>--}}

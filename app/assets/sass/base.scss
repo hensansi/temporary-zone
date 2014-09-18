@@ -1,5 +1,31 @@
-$color: blue;
 
-body {
-  background-color : $color;
+@import "reset";
+@import "fonts";
+@import "variables";
+
+/* base.scss */
+
+
+html,body {
+	background: url(/images/index.jpg) no-repeat center center fixed; 
+	background-color: #5890ad;
+	background-size: cover;
+	color:#000;
+	font-family: $font-stack;
+	font-weight: 400;
+	z-index:0;
+	overflow: hidden;
+	height: 100%;
+}
+
+a{
+  color: #000;
+  line-height: 120%;
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
+
+a:hover{
+  color: $primary-color;
+  border-bottom: 1px dotted $primary-color;
 }
