@@ -26,6 +26,8 @@ nav li{
   background: rgba(255,255,255,0.85);
 padding: 0.5em 0.7em 0.6em 0.7em;
   display:inline-block;
+  margin-right:0.6em;
+
 
 }
 
@@ -43,16 +45,18 @@ font-weight: 200;
 }
 
 .header__title{
-    background: rgba(255,255,255,0.5);
+  cursor:default;
+  opacity: 0.1;
+    background: rgba(255,255,255,0.85);
 
-  float:left;
+  float:right;
   font-size: 2.1em;
-  font-weight: 200;
-  padding-top: 0.2em;
-  padding-bottom: 0.15em;
-
-  padding-right: 0.2em;
-  padding-left: 0.2em;
+  font-weight: 700;
+padding-top: 0.2em;
+padding-bottom: 0.1em;
+padding-right: 0.25em;
+padding-left: 0.2em;
+margin-right:75px;
 }
 
 .header__title--colored{
@@ -85,7 +89,7 @@ font-weight: 200;
   position:relative;
   top:$top_space;
   margin-left: $left_space;
-  margin-right: 50%;
+  margin-right: 40%;
 }
 
 .text-box p{
