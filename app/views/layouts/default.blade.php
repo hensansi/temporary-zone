@@ -15,19 +15,29 @@
         <header>
             @include('layouts.partials.nav')
 
-            <h1 class="header__title @yield('class')">T<span class="header__title--colored">Z</span></h1>
+            {{--<h1 class="header__title @yield('class')">T<span class="header__title--colored">Z</span></h1>--}}
 
         </header>
 
-        <div class="container cf">
+        <div class="container clearfix">
             @yield('content')
+
+        </div>
+
+        <div class="footer"> 
+            <svg  height="30" width="30">
+                <circle class="circle" cx="15" cy="15" r="10"/>
+            </svg>
         </div>
 
         <div class="main-background"></div>
-<script>
+
+
+{{--<script>
         $(function() {
         $('.container').perfectScrollbar();
-    });    </script>
+    });
+</script>--}}
     </body>
     
 </html>

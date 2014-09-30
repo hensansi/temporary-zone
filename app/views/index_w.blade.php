@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="stripe-list-container">
+    <div class="stripe-list-container clearfix">
         @if (count($works))
     		@foreach ($works as $work)
             	<div class="stripe">
