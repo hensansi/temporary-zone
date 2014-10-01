@@ -5,10 +5,10 @@
         <title>Temporary Zone</title>
         <link rel="shortcut icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="/css/style.css">
-
+{{--
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <link rel="stylesheet" href="/js/perfect-scrollbar.css">
-        <script src="/js/perfect-scrollbar.js"></script>
+        <script src="/js/perfect-scrollbar.js"></script>--}}
     </head>
     <body>
 
