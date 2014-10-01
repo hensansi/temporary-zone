@@ -14,19 +14,15 @@ header{
 }
 
 
-header h1, header ul{
-  margin-left: $left_space;
-}
-
-
 
 nav{
+  text-align: center;
 
 
 }
 nav li{
-  background: rgba(255,255,255,0.85);
-padding: 0.5em 0.7em 0.6em 0.7em;
+  background: rgba(255,255,255,0);
+  padding: 0.5em 0.7em 0.6em 0.7em;
   display:inline-block;
   margin-right:0.6em;
 
@@ -75,6 +71,7 @@ margin-right:75px;
 
 
 .stripe-list-container{
+  margin:0 auto;
   position:relative;
   padding-top: $top_space;
   padding-left: $left_space;
@@ -82,21 +79,15 @@ margin-right:75px;
 }
 
 
-.text-box {
-position: relative;
-padding-top: 170px;
-padding-left: 100px;
-padding-right: 40%;
-}
 
-/*
+
 .text-box{
   width:60%;
-  margin: auto;
+  margin: 0 auto;
   padding-top:$top_space;
   position:relative;
 }
-*/
+
 
 
 .text-box p{
@@ -108,19 +99,21 @@ padding-right: 40%;
 
 }
 
-.box--full-height{
+.box--full-width{
   position: relative;
   z-index: 5;
   background: rgba(255,255,255,0.85);
   box-shadow: 7px 5px  10px 0.3px rgba(0, 0, 0, 0.1);
-  margin-right: 40%;
   padding-top: $top_space;
-  padding-left: $left_space;
+  margin-left: 20%;
+  margin-right: 20%;
   padding-bottom:4em;
-  height: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+  max-height:100%;
 }
 
-.box--full-height h2{
+.box--full-width h2{
   float:none;
   color:black;
   font-weight: 500;
@@ -130,7 +123,7 @@ padding-right: 40%;
   text-transform: uppercase;
 
 }
-.box--full-height h3{
+.box--full-width h3{
   font-weight: 500;
   color:black;
   text-transform: uppercase;
@@ -139,12 +132,12 @@ padding-right: 40%;
   padding: 1em 1em 0em 30px;
 }
 
-.box--full-height h3:last-child{
+.box--full-width h3:last-child{
   padding-top: 3em;
 }
 
-.box--full-height p{
-      line-height: 145%;
+.box--full-width p{
+  line-height: 145%;
   background: none;
   font-size: 1.375em;
   font-weight: 300;
@@ -155,19 +148,18 @@ padding-right: 40%;
 //https://www.npmjs.org/package/gulp-gm
 //https://www.npmjs.org/package/gulp-gm
 //https://www.npmjs.org/package/gulp-gm
-/**
+
 .bge {
-  position: fixed;
-  top:-10px;
-  left: 500px;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 110%;
-  height: 110%;
   filter: blur(3px);
+  background-size: cover;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height:100%;
+
 }
-**/
+
 
 .footer{
   width:100%;
@@ -184,7 +176,7 @@ svg{
 }
 
 .circle{
-    fill:$bg_txt_color;
+    fill: black;
     stroke:none;
 }
 

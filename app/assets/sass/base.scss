@@ -7,8 +7,8 @@
 
 
 html,body {
-	background: url(/images/index.jpg) no-repeat center center fixed; 
-	background-color: #5890ad;
+	/**background: url(/images/index.jpg) no-repeat center center fixed;**/
+	background-color: $bg-color;
 	background-size: cover;
 	color:#000;
 	font-family: $font-stack;
