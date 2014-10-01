@@ -3,185 +3,43 @@
 @import "variables";
 
 
-//Header
-
 header{
-  top:2.7em;
-  text-transform: uppercase;
-  width:100%;
+  background: rgba(50,50,50,0.9);
+  float:left;
+  height: 100%;
   position:fixed;
+  width:15%;
   z-index: 10;
-}
-
-
-
-nav{
-  text-align: center;
-
-
-}
-nav li{
-  background: rgba(255,255,255,0);
-  padding: 0.5em 0.7em 0.6em 0.7em;
-  display:inline-block;
-  margin-right:0.6em;
-
+  display: table;
 
 }
 
-nav ul{
-}
 
-nav a{
-  font-size: 1.5em;
-/* line-height: 130%; */
-font-weight: 200;
-}
-
-.link-is-active{
-  color:$primary-color;
-}
-
-.header__title{
-  cursor:default;
-  opacity: 0.1;
-    background: rgba(255,255,255,0.85);
-
-  float:right;
-  font-size: 2.1em;
-  font-weight: 700;
-padding-top: 0.2em;
-padding-bottom: 0.1em;
-padding-right: 0.25em;
-padding-left: 0.2em;
-margin-right:75px;
-}
-
-.header__title--colored{
-  color:$primary-color;
-}
-
-
+//Where the content is displayed
 .container{
-  width:100%;
+  float:left;
+  margin-left: 13%;
+  width:65%;
   position:relative;
   z-index:5;
-  background: none;
-}
-
-
-.stripe-list-container{
-  margin:0 auto;
-  position:relative;
-  padding-top: $top_space;
-  padding-left: $left_space;
-  z-index: 5;
-}
-
-
-
-
-.text-box{
-  width:60%;
-  margin: 0 auto;
-  padding-top:$top_space;
-  position:relative;
-}
-
-
-
-.text-box p{
-  background: rgba(255,255,255,0.85);
-  font-size: 1.375em;
-  font-weight:300;
-  padding: 2em 1em 2em 30px;
-  line-height: 145%;
-
-}
-
-.box--full-width{
-  position: relative;
-  z-index: 5;
-  background: rgba(255,255,255,0.85);
-  box-shadow: 7px 5px  10px 0.3px rgba(0, 0, 0, 0.1);
-  padding-top: $top_space;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-bottom:4em;
-  max-width: 60%;
-  margin: 0 auto;
-  max-height:100%;
-}
-
-.box--full-width h2{
-  float:none;
-  color:black;
-  font-weight: 500;
-  background: none;
-  font-size: 1.375em;
-  padding: 0em 1em 0em 30px;
-  text-transform: uppercase;
-
-}
-.box--full-width h3{
-  font-weight: 500;
-  color:black;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  background: none;
-  padding: 1em 1em 0em 30px;
-}
-
-.box--full-width h3:last-child{
-  padding-top: 3em;
-}
-
-.box--full-width p{
-  line-height: 145%;
-  background: none;
-  font-size: 1.375em;
-  font-weight: 300;
-  padding: 2em 1em 0em 30px;
-  z-index: 1;
-
-}
-//https://www.npmjs.org/package/gulp-gm
-//https://www.npmjs.org/package/gulp-gm
-//https://www.npmjs.org/package/gulp-gm
-
-.bge {
-  filter: blur(3px);
-  background-size: cover;
-
-  position: fixed;
-  top: 0;
-  left: 0;
   height:100%;
 
+    display: table;
+
+}
+
+.stripe-list-container{
+  position:relative;
+  z-index: 5;
+  padding-bottom:10%;
+  padding-left: 3%;
+  padding-top:10%;
 }
 
 
 .footer{
+  float:left;
   width:100%;
   background: rgba(255,255,255,0);
 }
-
-svg{
-    padding-bottom: 2em;
-    padding-top: 3em;
-    margin: 0 auto;
-    margin-top: 6em;
-
-    display: block;
-}
-
-.circle{
-    fill: black;
-    stroke:none;
-}
-
-.footer::selection {
-  background: none;
-}
-
 

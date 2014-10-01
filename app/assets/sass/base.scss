@@ -7,7 +7,7 @@
 
 
 html,body {
-	/**background: url(/images/index.jpg) no-repeat center center fixed;**/
+	background: url(/images/index.jpg) no-repeat center center fixed;
 	background-color: $bg-color;
 	background-size: cover;
 	color:#000;
@@ -19,7 +19,6 @@ html,body {
 
 a{
   color: #000;
-  line-height: 120%;
   border-bottom: 1px dotted #000;
   text-decoration: none;
 }

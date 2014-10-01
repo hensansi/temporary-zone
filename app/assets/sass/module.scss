@@ -2,8 +2,39 @@
 
 /* module.scss */
 
+//Nav Module
+
+nav{
+  //position:fixed;
+  //bottom:8%;
+  //left:2%;
+  text-align: center;
+  text-transform: uppercase;
+
+
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+nav li{
+  padding: 0.5em 0.7em 0.6em 0.7em;
+  margin-right:0.6em;
+}
+
+ul{
+    margin:auto 0;
+
+}
+nav a{
+  font-size: 1.5em;
+  font-weight: 200;
+  color:white;
+}
+
+
+
 //Stripe Module
-$stripe_text_pad:220px;
+$stripe_text_pad:0px;
 
 
 .stripe{
@@ -79,4 +110,107 @@ $stripe_text_pad:220px;
 
 .stripe a{
   border-bottom: none;
+}
+
+
+
+//BOX
+
+
+.box{
+  width: 70%;
+  height:100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.box p{
+  background: rgba(255,255,255,0.85);
+  font-size: 1.375em;
+  font-weight:300;
+  padding: 2em 1em 2em 30px;
+  padding-left:10%;
+  line-height: 145%;
+
+}
+
+
+.box--full-height{
+  height:100%;
+  display: table-cell;
+  vertical-align: middle;
+
+  position: relative;
+  z-index: 5;
+  background: rgba(255,255,255,0.85);
+  padding-top: 50px;
+  padding-bottom:4em;
+  padding-left:5%;
+  max-width: 60%;
+}
+
+.box--full-height h2{
+  float:none;
+  color:black;
+  font-weight: 500;
+  background: none;
+  font-size: 1.375em;
+  padding: 0em 1em 0em 30px;
+  text-transform: uppercase;
+}
+.box--full-height h3{
+  font-weight: 500;
+  color:black;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  background: none;
+  padding: 1em 1em 0em 30px;
+}
+
+.box--full-height h3:last-child{
+  padding-top: 3em;
+}
+
+.box--full-height p{
+  line-height: 145%;
+  background: none;
+  font-size: 1.375em;
+  font-weight: 300;
+  padding: 2em 1em 0em 30px;
+  z-index: 1;
+
+}
+
+.bge {
+position: fixed;
+top: -10px;
+left: 14.5%;
+right: 0;
+z-index: 2;
+display: block;
+width: 110%;
+height: 110%;
+-webkit-filter: blur(3px);
+filter: blur(3px);
+}
+
+
+
+//Footer
+
+svg{
+    padding-bottom: 2em;
+    padding-top: 5em;
+    margin: 0 auto;
+    display: block;
+}
+
+.circle{
+    fill: white;
+    stroke:none;
+}
+
+.footer::selection {
+  background: none;
 }

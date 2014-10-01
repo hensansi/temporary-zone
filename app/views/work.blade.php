@@ -10,7 +10,7 @@ none
 @section('content')
 
 	
-    <div class="box--full-width clearfix">
+    <div class="box--full-height">
 	<h2>{{ $work->name }}</h2>
     <h3>Client: {{ $work->client }}'</h3>
     <p>{{ $work->descricao }}</p>

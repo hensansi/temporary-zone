@@ -2,13 +2,13 @@
 
 
 @section('content')
-    <div class="stripe-list-container clearfix">
+    <div class="stripe-list-container">
         @if (count($works))
     		@foreach ($works as $work)
-            	<div class="stripe">
+            	<div class="stripe clearfix">
         			<h2 class="stripe__subinfo">{{ $work->client }}</h2>
                     <a href="work/{{$work->a}}">
-                        <div class="stripe__thumbnail" style="background-image:url(/images/web/thumbnails/{{ $work->a }}.jpg)"></div>
+                        {{--<div class="stripe__thumbnail" style="background-image:url(/images/web/thumbnails/{{ $work->a }}.jpg)"></div>--}}
                         <div class="stripe__title">
                             <h1>{{ $work->name }}</h1>
                     </div>
