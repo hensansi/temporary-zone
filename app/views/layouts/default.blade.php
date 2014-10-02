@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Temporary Zone</title>
-        <link rel="shortcut icon" href="http://henriquesilva-a88.kxcdn.com/images/favicon.ico">
-        <link rel="stylesheet" href="http://henriquesilva-a88.kxcdn.com/css/style.css">
+        <link rel="shortcut icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
 {{--
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <link rel="stylesheet" href="/js/perfect-scrollbar.css">
