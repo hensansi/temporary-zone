@@ -16,12 +16,12 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 table { border-collapse: collapse; border-spacing: 0; }
 
 /* fonts.scss */
-@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-ExtraBold.woff"), url("fonts-a88.kxcdn.com/fonts/FiraSans-ExtraBold.woff") format("woff"); font-weight: 700; }
-@font-face { font-family: "Fira"; src: local("Fira-B"), url("http://fonts-a88.kxcdn.com/fonts/FiraSans-Bold.woff") format("woff"), url("../fonts/FiraSans-ExtraBold.woff") format("woff"); font-weight: 600; }
-@font-face { font-family: "Fira"; src: local("Fira-B"), url("http://fonts-a88.kxcdn.com/fonts/FiraSans-Medium.woff") format("woff"), url("../fonts/FiraSans-Medium.woff") format("woff"); font-weight: 500; }
-@font-face { font-family: "Fira"; src: local("Fira-B"), url("http://fonts-a88.kxcdn.com/fonts/FiraSans-Regular.woff") format("woff"), url("../fonts/FiraSans-Regular.woff") format("woff"); font-weight: 400; }
-@font-face { font-family: "Fira"; src: local("Fira-B"), url("http://fonts-a88.kxcdn.com/fonts/FiraSans-Light.woff") format("woff"), url("../fonts/FiraSans-Light.woff") format("woff"); font-weight: 300; }
-@font-face { font-family: "Fira"; src: local("Fira-B"), url(http://fonts-a88.kxcdn.com/fonts/FiraSans-Hair.woff) format("woff"), url("../fonts/FiraSans-Hair.woff") format("woff"); font-weight: 200; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-ExtraBold.woff"); font-weight: 700; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-ExtraBold.woff") format("woff"); font-weight: 600; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Medium.woff") format("woff"); font-weight: 500; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Regular.woff") format("woff"); font-weight: 400; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Light.woff") format("woff"); font-weight: 300; }
+@font-face { font-family: "Fira"; src: local("Fira-B"), url("../fonts/FiraSans-Hair.woff") format("woff"); font-weight: 200; }
 /* base.scss */
 html, body { background: url(/images/index.jpg) no-repeat center center fixed; background-color: #51B5E9; background-size: cover; color: #000; font-family: Fira, Helvetica, sans-serif; font-weight: 400; z-index: 0; height: 100%; }
 
@@ -33,7 +33,7 @@ a:hover { color: #00F; border-bottom: 1px dotted #00F; }
 
 {
 "version": 3,
-"mappings": ";;AAKA,0eAYyB,GACxB,MAAM,EAAE,CAAC,EACT,OAAO,EAAE,CAAC,EACV,MAAM,EAAE,CAAC,EACT,SAAS,EAAE,IAAI,EACf,IAAI,EAAE,OAAO,EACb,cAAc,EAAE,QAAQ;;;AAGzB,uFAC2C,GAC1C,OAAO,EAAE,KAAK;;AAEf,IAAK,GACJ,WAAW,EAAE,CAAC;;AAEf,MAAO,GACN,UAAU,EAAE,IAAI;;AAEjB,aAAc,GACb,MAAM,EAAE,IAAI;;AAEb,sDACkB,GACjB,OAAO,EAAE,EAAE,EACX,OAAO,EAAE,IAAI;;AAEd,KAAM,GACL,eAAe,EAAE,QAAQ,EACzB,cAAc,EAAE,CAAC;;;AC5ClB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,iIAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,kJAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,iJAAe,EACpB,WAAW,EAAE,GAAG;AAGlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,mJAAe,EACpB,WAAW,EAAE,GAAG;AAGlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,+IAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,2IAAe,EACpB,WAAW,EAAE,GAAG;;AC9BlB,UAAU,GACT,UAAU,EAAE,oDAAoD,EAChE,gBAAgB,ECFN,OAAO,EDGjB,eAAe,EAAE,KAAK,EACtB,KAAK,EAAC,IAAI,EACV,WAAW,ECXC,2BAAI,EDYhB,WAAW,EAAE,GAAG,EAChB,OAAO,EAAC,CAAC,EACT,MAAM,EAAE,IAAI;;AAGb,CAAC,GACC,KAAK,EAAE,IAAI,EACX,aAAa,EAAE,eAAe,EAC9B,eAAe,EAAE,IAAI;;AAGvB,OAAO,GACL,KAAK,ECnBS,IAAI,EDoBlB,aAAa,EAAE,eAAyB;;AAG1C,eAAgB,GACZ,OAAO,EAAC,EAAE,EACV,OAAO,EAAC,KAAK,EACb,KAAK,EAAC,IAAI",
+"mappings": ";;AAKA,0eAYyB,GACxB,MAAM,EAAE,CAAC,EACT,OAAO,EAAE,CAAC,EACV,MAAM,EAAE,CAAC,EACT,SAAS,EAAE,IAAI,EACf,IAAI,EAAE,OAAO,EACb,cAAc,EAAE,QAAQ;;;AAGzB,uFAC2C,GAC1C,OAAO,EAAE,KAAK;;AAEf,IAAK,GACJ,WAAW,EAAE,CAAC;;AAEf,MAAO,GACN,UAAU,EAAE,IAAI;;AAEjB,aAAc,GACb,MAAM,EAAE,IAAI;;AAEb,sDACkB,GACjB,OAAO,EAAE,EAAE,EACX,OAAO,EAAE,IAAI;;AAEd,KAAM,GACL,eAAe,EAAE,QAAQ,EACzB,cAAc,EAAE,CAAC;;;AC5ClB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,wDAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,uEAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,oEAAe,EACpB,WAAW,EAAE,GAAG;AAGlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,qEAAe,EACpB,WAAW,EAAE,GAAG;AAGlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,mEAAe,EACpB,WAAW,EAAE,GAAG;AAIlB,UAIC,GAHC,WAAW,EAAE,MAAM,EACnB,GAAG,EAAE,kEAAe,EACpB,WAAW,EAAE,GAAG;;AC9BlB,UAAU,GACT,UAAU,EAAE,oDAAoD,EAChE,gBAAgB,ECFN,OAAO,EDGjB,eAAe,EAAE,KAAK,EACtB,KAAK,EAAC,IAAI,EACV,WAAW,ECXC,2BAAI,EDYhB,WAAW,EAAE,GAAG,EAChB,OAAO,EAAC,CAAC,EACT,MAAM,EAAE,IAAI;;AAGb,CAAC,GACC,KAAK,EAAE,IAAI,EACX,aAAa,EAAE,eAAe,EAC9B,eAAe,EAAE,IAAI;;AAGvB,OAAO,GACL,KAAK,ECnBS,IAAI,EDoBlB,aAAa,EAAE,eAAyB;;AAG1C,eAAgB,GACZ,OAAO,EAAC,EAAE,EACV,OAAO,EAAC,KAAK,EACb,KAAK,EAAC,IAAI",
 "sources": ["../_reset.scss","../_fonts.scss","../base.scss","../_variables.scss"],
 "names": [],
 "file": "base.css"
