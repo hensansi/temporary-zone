@@ -19,6 +19,7 @@ nav{
 nav li{
   padding: 0.5em 0.7em 0.6em 0.7em;
   margin-right:0.6em;
+
 }
 
 ul{
@@ -29,13 +30,15 @@ nav a{
   font-size: 1.5em;
   font-weight: 200;
   color:white;
+  border-bottom: 1px dotted white;
 }
+
 
 
 
 //Stripe Module
 $stripe_text_pad:0px;
-
+$text_color:rgba(50,50,50,0.95);
 
 .stripe{
   float:left;
@@ -57,7 +60,7 @@ $stripe_text_pad:0px;
   cursor: default;
   font-size: 0.8em;
   font-weight: 400;
-
+  color:$text_color;
   padding-top: 0.5%;
   padding-left: 0.4em;
   padding-right: 0.4em;
@@ -88,7 +91,7 @@ $stripe_text_pad:0px;
   border-bottom: none;
   margin-left: $stripe_text_pad;
   float:left;
-  color:#000;
+  color: $text_color;
   background: rgba(255, 255, 255, 0.75);
   font-size: 1.4em;
   font-weight: 500;
