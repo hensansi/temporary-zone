@@ -11,7 +11,7 @@
    		<svg  height="30" width="30">
                 <circle class="circle" cx="15" cy="15" r="10"/>
         </svg>
-
+{{--
 	 	<div class="toggl-container">
 	    	<h2 class="toggl--title" >What I have been up to lately* [To implement]</h3>
 	        <h3 class="toggl--item">Practicing Touch Typing on Keybr -- e a i n t o r l s u d</h3>
@@ -48,7 +48,7 @@
 			<h3 class="toggl--item"> Pratical Vim [to read]</h3>
 
 
-	    </div>
+	    </div>--}}
 
     </div>
 
