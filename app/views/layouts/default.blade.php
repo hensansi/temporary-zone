@@ -13,9 +13,10 @@
     <body>
 
         <header class="">
+            <h1 class="">Temporary<span class="header__title--colored"> Zone</span></h1>
             @include('layouts.partials.nav')
 
-            {{--<h1 class="header__title @yield('class')">T<span class="header__title--colored">Z</span></h1>--}}
+            
 
         </header>
 
