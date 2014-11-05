@@ -7,9 +7,10 @@ header h1{
   position:fixed;
   font-size: 1.5em;
   font-weight: 200;
-  color:white;
+  color: #5881AF;
+  opacity:0;
     padding:0.2em;
-    margin-left:4%;
+    margin-left:12%;
 }
 
 
@@ -18,12 +19,11 @@ header h1{
 nav{
   text-transform: uppercase;
   text-align: right;
-  margin-right:8%;
+  margin-right:5%;
 }
 
 nav li{
   display:inline-block;
-  padding:0.3em;
 }
 
 //Change to class
@@ -32,6 +32,8 @@ li + li{
 }
 
 nav a{
+  padding:0.2em;
+
 display:inline-block;
   font-size: 1.5em;
   font-weight: 200;
@@ -131,11 +133,11 @@ $text_color:rgba(50,50,50,0.95);
   height:100%;
   display: table-cell;
   vertical-align: middle;
+  color:white;
 }
 
 
 .box p{
-  background: rgba(255,255,255,0.85);
   font-size: 1.375em;
   font-weight:300;
   padding: 2em 1em 2em 30px;
@@ -149,19 +151,16 @@ $text_color:rgba(50,50,50,0.95);
   height:100%;
   display: table-cell;
   vertical-align: middle;
-
   position: relative;
   z-index: 5;
-  background: rgba(255,255,255,0.85);
   padding-top: 50px;
   padding-bottom:4em;
-  padding-left:5%;
-  width: 90%;
+  width: 75%;
+  color:white;
 }
 
 .box--full-height h2{
   float:none;
-  color:black;
   font-weight: 500;
   background: none;
   font-size: 1.375em;
@@ -170,7 +169,6 @@ $text_color:rgba(50,50,50,0.95);
 }
 .box--full-height h3{
   font-weight: 500;
-  color:black;
   text-transform: uppercase;
   font-size: 0.9em;
   background: none;
@@ -193,17 +191,27 @@ $text_color:rgba(50,50,50,0.95);
 
 .bge {
 position: fixed;
-top: -10px;
-left: 55%;
-right: 0;
+top: 0;
+background-repeat: no-repeat;
 z-index: 2;
 display: block;
-width: 110%;
-height: 110%;
--webkit-filter: blur(3px);
+width: 45%;
+height: 100%;
 filter: blur(3px);
 }
 
+.main-background {
+  background: url(/images/test3.png) no-repeat center center fixed;
+  background-size: cover;
+position: fixed;
+
+top: 0;
+left: 0;
+z-index: 3;
+display: block;
+width: 100%;
+height: 100%;
+}
 
 
 //Footer

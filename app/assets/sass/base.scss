@@ -7,8 +7,7 @@
 
 
 html,body {
-	background: url(/images/index.jpg) no-repeat center center fixed;
-	background-color: $bg-color;
+	background: url(/images/test4.png) no-repeat center center fixed #5881AF;
 	background-size: cover;
 	color:#000;
 	font-family: $font-stack;
@@ -18,9 +17,11 @@ html,body {
 }
 
 a{
-  color: #000;
-  border-bottom: 1px dotted #000;
+  color: #FFF;
+  border-bottom: 1px dotted #FFF;
   text-decoration: none;
+    background-color: #5881AF;
+
 }
 
 a:hover{

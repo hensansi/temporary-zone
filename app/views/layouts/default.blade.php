@@ -22,6 +22,7 @@
 
         <div class="container clearfix">
             @yield('content')
+        <div class="main-background"></div>
 
         </div>
 {{--
@@ -31,7 +32,6 @@
             </svg>
         </div>--}}
 
-        <div class="main-background"></div>
 
 
 {{--<script>
