@@ -39,6 +39,9 @@
         $('.container').perfectScrollbar();
     });
 </script>--}}
+
+            @include('layouts.partials.googleAnalytics')
+
     </body>
     
 </html>
