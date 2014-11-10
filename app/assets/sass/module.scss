@@ -201,7 +201,7 @@ filter: blur(3px);
 }
 
 .main-background {
-  background: url(/images/test3.png) no-repeat center center fixed;
+  background: url(/images/back.jpg) no-repeat center center fixed;
   background-size: cover;
 position: fixed;
 
@@ -211,7 +211,14 @@ z-index: 3;
 display: block;
 width: 100%;
 height: 100%;
+
+/* iOS support */
+ -webkit-mask: url(/images/pac2.svg) center center / cover;
+
 }
+
+
+
 
 
 //Footer
