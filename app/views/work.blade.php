@@ -19,8 +19,10 @@ none
 
 
 	</div>
+<div class="mask">
 
-	<div class="bge" style="background-image: url(/images/web/{{ $work->a }}.png)"></div>
+	<div class="bge" style="background-image: url(/images/web/{{ $work->a }}.jpg)"></div>
+</div>
 
 	
 

@@ -193,14 +193,30 @@ $text_color:rgba(50,50,50,0.95);
 
 .bge {
 position: fixed;
+background-size: cover;
+backgroung-position: 1000px 0px;
 top: 0;
+left:0;
 background-repeat: no-repeat;
 z-index: 2;
 display: block;
-width: 45%;
+width: 100%;
 height: 100%;
 filter: blur(3px);
+ mask: url(/images/work_mask.svg) center center / cover;
+
+
 }
+
+.mask{
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+ //mask: url(/images/work_mask.svg) center center / cover;
+}
+
+
 
 .main-background {
   background: url(/images/back.jpg) no-repeat center center fixed;
@@ -215,8 +231,7 @@ width: 100%;
 height: 100%;
 
 /* iOS support */
- -webkit-mask: url(/images/pac2.svg) center center / cover;
-
+ mask: url(/images/mask.svg) center center / cover;
 }
 
 
