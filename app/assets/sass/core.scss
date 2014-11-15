@@ -1,7 +1,9 @@
 @import "variables";
 
 /* base.scss */
-
+.enhanced{
+  visibility: hidden;
+}
 
 html,body {
   font-family: sans-serif;

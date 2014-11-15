@@ -1,6 +1,12 @@
 <style>
-/* base.scss */
-html, body { font-family: sans-serif; font-weight: 400; z-index: 0; height: 100%; }
+/* base.scss PUT VISIBILITY IN JAVASCRITP */
+
+.enhanced{
+	visibility: hidden;
+}
+
+html, body { font-family: sans-serif; font-weight: 400; z-index: 0; height: 100%; 
+ }
 
 html, body, div, h1, h2, h3, ul, p { margin: 0; padding: 0; border: 0; }
 

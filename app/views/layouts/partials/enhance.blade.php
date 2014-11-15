@@ -1,5 +1,19 @@
 <script>
+
+
+
+
 if( ( "querySelector" in document && 'addEventListener' in window ) ){
+
+var doc = window.document,
+		docElem = doc.documentElement,
+		// classes to be added to the HTML element in qualified browsers
+		htmlClasses = [ "enhanced" ];
+
+
+docElem.className += " " + htmlClasses.join(" ");
+
+
 		// basic browsers: last stop here!
 /*!
 loadCSS: load a CSS file asynchronously.
@@ -46,7 +60,7 @@ function loadCSS( href, before, media ){
 
   loadCSS( "/css/enhanced.css" );
 
-  	}
+ }
 
 
 </script>
