@@ -1,0 +1,254 @@
+@import "variables";
+
+/* module.scss */
+
+
+header h1{
+  position:fixed;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: #5881AF;
+  opacity:0;
+    padding:0.2em;
+    margin-left:12%;
+}
+
+
+//Nav Module
+
+nav{
+  text-transform: uppercase;
+  text-align: right;
+  margin-right:5%;
+}
+
+nav li{
+  display:inline-block;
+}
+
+//Change to class
+li + li{
+  margin-left:0.5em;
+}
+
+nav a{
+  padding:0.2em;
+
+display:inline-block;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+
+
+
+//Stripe Module
+$stripe_text_pad:0px;
+$text_color:rgba(50,50,50,0.95);
+
+.stripe{
+  float:left;
+  clear:both;
+  margin-top: 10%;
+  text-transform: uppercase;
+}
+
+.stripe:first-child{
+  margin-top: 0;
+}
+
+
+.stripe__subinfo{
+  margin-left: $stripe_text_pad;
+  float:left;
+  clear:both;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  font-size: 0.8em;
+  font-weight: 400;
+  color:$text_color;
+  padding-top: 0.5%;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-bottom: 0.2em;
+}
+
+.stripe a{
+  display:inline-block;
+  height: 100%;
+  float:left;
+  clear:both;
+  position:relative;
+  border: none; 
+
+}
+
+
+.stripe__thumbnail{
+  position: absolute;
+  min-height: 100%;
+  width:$stripe_text_pad;
+  float:left;
+  clear:both; 
+}
+
+
+.stripe__title{
+  border-bottom: none;
+  margin-left: $stripe_text_pad;
+  float:left;
+  color: $text_color;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 0.25em 0.4em 0.25em 0.4em;
+  line-height: 120%;
+
+}
+
+.stripe__title h1{
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
+
+.stripe__title h1:hover{
+  color: $primary-color;
+  border-bottom: 1px dotted $primary-color;
+}
+
+
+.stripe a{
+  border-bottom: none;
+}
+
+
+
+//BOX
+
+
+.box{
+  position:relative;
+  z-index:6;
+  width: 70%;
+  height:100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.box p{
+  font-size: 1.375em;
+  font-weight:300;
+  padding: 2em 1em 2em 30px;
+  padding-left:10%;
+  line-height: 145%;
+
+}
+
+
+.box--full-height{
+  height:100%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 5;
+  padding-top: 50px;
+  padding-bottom:4em;
+  width: 75%;
+  color:white;
+}
+
+.box--full-height h2{
+  float:none;
+  font-weight: 500;
+  background: none;
+  font-size: 1.375em;
+  padding: 0em 1em 0em 30px;
+  text-transform: uppercase;
+}
+.box--full-height h3{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  background: none;
+  padding: 1em 1em 0em 30px;
+}
+
+.box--full-height h3:last-child{
+  padding-top: 3em;
+}
+
+.box--full-height p{
+  line-height: 145%;
+  background: none;
+  font-size: 1.375em;
+  font-weight: 300;
+  padding: 2em 1em 0em 30px;
+  z-index: 1;
+
+}
+
+.bge {
+position: fixed;
+background-size: cover;
+backgroung-position: 1000px 0px;
+top: 0;
+left:0;
+background-repeat: no-repeat;
+z-index: 2;
+display: block;
+width: 100%;
+height: 100%;
+filter: blur(3px);
+ mask: url(/images/work_mask.svg) center center / cover;
+
+
+}
+
+.mask{
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+ //mask: url(/images/work_mask.svg) center center / cover;
+}
+
+
+
+.main-background {
+  background: url(/images/back.jpg) no-repeat center center fixed;
+  background-size: cover;
+position: fixed;
+
+top: 0;
+left: 0;
+z-index: 3;
+display: block;
+width: 100%;
+height: 100%;
+
+/* iOS support */
+ mask: url(/images/mask.svg) center center / cover;
+}
+
+
+
+
+
+//Footer
+
+svg{
+    padding-bottom: 2em;
+    padding-top: 5em;
+    margin: 0 auto;
+    display: block;
+}
+
+.circle{
+    fill: white;
+    stroke:none;
+}
+
+.footer::selection {
+  background: none;
+}

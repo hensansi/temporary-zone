@@ -3,22 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>Temporary Zone</title>
+        <meta name="description" content="Henrique Silva temporary and in ever evolution portfolio">
         <link rel="shortcut icon" href="/images/favicon.ico">
-        <link rel="stylesheet" href="/css/style.css">
-{{--
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <link rel="stylesheet" href="/js/perfect-scrollbar.css">
-        <script src="/js/perfect-scrollbar.js"></script>--}}
+       
+        <meta name="fullcss"  content="/css/enhanced.css">
+    
+            @include('layouts.partials.critical')
+            @include('layouts.partials.enhance')
+
+
     </head>
     <body>
 
-        <header class="">
+        <div class="header">
             <h1 class="">Temporary<span class="header__title--colored"> Zone</span></h1>
             @include('layouts.partials.nav')
 
             
 
-        </header>
+        </div>
 
         <div class="container clearfix">
             @yield('content')

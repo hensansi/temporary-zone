@@ -1,0 +1,163 @@
+@import "variables";
+
+/* base.scss */
+
+
+html,body {
+  font-family: sans-serif;
+  font-weight: 400;
+  z-index:0;
+  height: 100%;
+}
+
+html,body,div,h1,h2,h3,ul,p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a{
+  color: #000;
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+  background-color: #FFF;
+}
+
+a:hover{
+  color: $primary-color;
+  border-bottom: 1px dotted $primary-color;
+}
+
+
+.header{
+  font-size: 1.5em;
+  margin-left: 10%;
+  margin-top:4%;
+  padding-bottom:4%;
+
+}
+
+.header h1{
+  padding-bottom:0.2em;
+  color: $primary-color;
+}
+
+.nav{
+  font-size: 1.5em;
+  font-weight:200;
+}
+
+.nav ul
+{
+  list-style-type: none;
+}
+
+.nav li{
+  display:inline-block;
+}
+
+li + li{
+    margin-left:0.5em;
+
+}
+
+img{
+  width:100%;
+}
+
+.container{
+  font-size:1.5em;
+  margin-left: 10%;
+  width:80%;
+}
+$stripe_text_pad:0px;
+$text_color:rgba(50,50,50,0.95);
+
+.stripe__subinfo{
+  margin-left: $stripe_text_pad;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  font-size: 0.8em;
+  font-weight: 400;
+  color:$text_color;
+  padding-top: 0.5%;
+  padding-right: 0.4em;
+  padding-bottom: 0.2em;
+}
+
+.stripe a{
+  display:inline-block;
+  height: 100%;
+  border: none; 
+
+}
+
+
+.stripe__thumbnail{
+  min-height: 100%;
+  width:$stripe_text_pad;
+  float:left;
+  clear:both; 
+}
+
+
+.stripe__title{
+  border-bottom: none;
+  margin-left: $stripe_text_pad;
+  color: $text_color;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 0.25em 0.4em 0.25em 0em;
+  line-height: 120%;
+
+}
+
+.stripe{
+  margin-bottom: 10%;
+  text-transform: uppercase;
+}
+
+
+.box p{
+  font-size: 1.375em;
+  font-weight:300;
+  line-height: 145%;
+}
+
+
+.box--full-height{
+  position: relative;
+  z-index: 5;
+  padding-bottom:4em;
+}
+
+.box--full-height h2{
+  font-weight: 500;
+  font-size: 1.375em;
+  padding: 0em 1em 0em 0px;
+  text-transform: uppercase;
+}
+.box--full-height h3{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding: 1em 1em 0em 0px;
+}
+
+.box--full-height h3:last-child{
+  padding-top: 3em;
+}
+
+
+.box--full-height p{
+  line-height: 145%;
+  background: none;
+  font-size: 1.375em;
+  font-weight: 300;
+  z-index: 1;
+}
+
+
+//Sources
+//http://www.html5rocks.com/en/tutorials/masking/adobe/

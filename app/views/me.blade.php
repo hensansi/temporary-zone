@@ -6,8 +6,10 @@
     <div class="box">
 
         <p>Hi, my name is Henrique Silva, a fresh graduate from the <a href="http://www.uc.pt/en/fctuc/design-e-multimedia/B.Sc">University of Coimbra</a>. I like to ride bicycle,travel and discover new cultures. One of my ambitions is being able to work and travel at the same time. For now I am getting to know Laravel and more about frameworks MVC. </p>
-   
+   		
 {{--
+	   		<img src="/images/back.jpg">
+
 	 	<div class="toggl-container">
 	    	<h2 class="toggl--title" >What I have been up to lately* [To implement]</h3>
 	        <h3 class="toggl--item">Practicing Touch Typing on Keybr -- e a i n t o r l s u d</h3>
