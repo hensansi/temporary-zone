@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  web:
+    build: '.'
+    command: bash -c 'php artisan migrate --force && php artisan db:seed --force && php artisan serve --host=0.0.0.0'
+    ports:
+     - "8000:8000"
+    volumes:
+     - .:/app
+    depends_on:
+     - db
+    environment:
+      DB_HOST: db
+      DB_NAME: portfolio
+      DB_USERNAME: homestead
+      DB_PASSWORD: secret
+  db:
+    image: "postgres"
+    environment:
+      POSTGRES_DB: portfolio
+      POSTGRES_USER: homestead
+      POSTGRES_PASSWORD: secret

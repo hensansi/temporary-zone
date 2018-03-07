@@ -2,7 +2,7 @@
 
 return[
     'DB_HOST' => 'localhost',
-    'DB_NAME' => 'portfolio',
-    'DB_USERNAME' => 'connect',
-    'DB_PASSWORD' => 'connect'
+    'DB_NAME' => 'portfolio ',
+    'DB_USERNAME' => 'homestead',
+    'DB_PASSWORD' => 'secret'
 ];
