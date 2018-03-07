@@ -1,0 +1,45 @@
+- install
+yaourt -Sy composer
+composer global require "laravel/installer"
+yaourt -Sy php
+$HOME/.composer/vendor/bin
+
+#export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+composer install
+
+
+composer install
+Mcrypt PHP extension required.
+keyserver receive failed
+
+yaourt -Sy php-mcryp
+sudo nano /etc/php/php.ini
+
+
+php artisan migrate
+
+docker run -p 5432:5432 --name postgres \
+-e POSTGRES_USER=homestead \
+-e POSTGRES_PASSWORD=secret \
+-e POSTGRES_DB=portfolio \
+-d postgres
+
+export DB_HOST=localhost
+export DB_NAME=portfolio
+export DB_USERNAME=homestead
+export DB_PASSWORD=secret
+
+php artisan migrate
+php artisan db:seed
+php artisan serve
+
+chmod -R a+rwx app/storage
+
+
+yaourt -Sy php51-mcrypt
+
+
+docker run -it -p 8080:8080 -w /usr/src/app -v ${PWD}:/usr/src/app custom-php bash
+
+Now after all these issues....
