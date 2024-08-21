@@ -26,8 +26,8 @@ RUN docker-php-ext-configure pcntl --enable-pcntl &&\
     zip \
     pdo_pgsql
 
-# Install Composer 1.6.3 (January 2018 version)
-RUN curl -sS https://getcomposer.org/download/1.6.3/composer.phar -o composer.phar &&\
+# Install Composer 2.2.24 (June 2024)
+RUN curl -sS https://getcomposer.org/download/2.2.24/composer.phar -o composer.phar &&\
     mv composer.phar /usr/local/bin/composer &&\
     chmod +x /usr/local/bin/composer
 
