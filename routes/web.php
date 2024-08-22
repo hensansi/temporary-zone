@@ -16,9 +16,9 @@ use App\Http\Controllers\PagesController;
 */
 
 Route::get('/', [PagesController::class, 'index']);
-Route::get('me', [PagesController::class, 'index']);
-Route::get('work', [PagesController::class, 'work']);
-Route::get('contact', [PagesController::class, 'contact']);
+Route::get('me', [PagesController::class, 'index'])->name('me');
+Route::get('work', [PagesController::class, 'work'])->name('work');
+Route::get('contact', [PagesController::class, 'contact'])->name('contact');
 
 Route::get('work/web', function () {
     $category = "web";
@@ -31,4 +31,4 @@ Route::get('work/web', function () {
 Route::get('work/{work}', function ($work_a) {
     $work = DB::select('SELECT id, name, client, url, a, descricao FROM works WHERE a = ?', [$work_a]);
     return view('work', ['work' => $work]);
-});
+})->name('work.slug');
