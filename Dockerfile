@@ -1,4 +1,4 @@
-FROM php:7.1.33-cli-stretch
+FROM php:7.2-cli-stretch
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Replace repos in archive as release is EOL
@@ -17,17 +17,17 @@ RUN apt-get update && \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-
 # Install PHP extensions
 RUN docker-php-ext-configure pcntl --enable-pcntl &&\
+    pecl install mcrypt-1.0.3 &&\
+    docker-php-ext-enable mcrypt &&\
     docker-php-ext-install \
-    mcrypt \
     pcntl \
     zip \
     pdo_pgsql
 
 # Install Composer 2.2.24 (June 2024)
-RUN curl -sS https://getcomposer.org/download/2.2.24/composer.phar -o composer.phar &&\
+RUN curl -sS https://getcomposer.org/download/2.7.7/composer.phar -o composer.phar &&\
     mv composer.phar /usr/local/bin/composer &&\
     chmod +x /usr/local/bin/composer
 
