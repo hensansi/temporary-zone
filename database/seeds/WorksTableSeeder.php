@@ -63,10 +63,10 @@ class WorksTableSeeder extends Seeder {
         Work::create([
             'name' => 'Queima 24! - Short Film Contest',
             'client' => 'tvAAC',
-            'url' => 'queima24.hensansi.me',
+            'url' => 'q24.hensansi.me',
             'id_category' => 1,
             'a' => 'queima24',
-            'descricao' => 'Built in 2010, this was the initiation into the web development world. With the exception of the javascript navigation, the typo photography and design were made by me. The website was recovered from WebArchive as tv.aac.uc.pt/queima24'
+            'descricao' => 'Built in 2010, this was the initiation into the web development world. With the exception of the javascript navigation, the typo photography and design were made by me. The website was recovered from WebArchive under tv.aac.uc.pt/queima24'
         ]);
     /*
 

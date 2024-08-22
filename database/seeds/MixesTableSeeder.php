@@ -39,6 +39,10 @@ class MixesTableSeeder extends Seeder {
         Mix::create(['id_work' => 4,'id_technology' => 2]);
         Mix::create(['id_work' => 5,'id_technology' => 1]);
         Mix::create(['id_work' => 5,'id_technology' => 2]);
+
+        Mix::create(['id_work' => 6,'id_technology' => 1]);
+        Mix::create(['id_work' => 6,'id_technology' => 2]);
+
         /*
         Mix::create(['id_work' => 7,'id_technology' => 1]);
         Mix::create(['id_work' => 7,'id_technology' => 2]);
