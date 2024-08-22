@@ -12,7 +12,7 @@ Hopefully this is the last time I will touch the project as it is and I will def
 
 You can see the current state at https://tz.hensansi.me.
 
-# Helping Notes and Commands
+# Notes and Commands
 
 ## Extract files from the docker image
 
@@ -30,7 +30,7 @@ sudo docker rm "$container_id"
 sudo chown -R $USER:$USER $destination_path
 ```
 
-## Export project to statuic files
+## Export project to static files
 
 -   Start the project with docker-composer.
 -   Enter the container `sudo docker exec -it temporary-zone-web-1 bash`
