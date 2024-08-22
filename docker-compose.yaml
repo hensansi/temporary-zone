@@ -7,6 +7,9 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    volumes:
+      - ./public:/app/public
+      - ./resources/views:/app/resources/views
     environment:
       DB_HOST: db
       DB_NAME: portfolio

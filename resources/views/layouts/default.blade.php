@@ -6,21 +6,16 @@
         <meta name="description" content="Henrique Silva temporary and in ever evolution portfolio">
         <link rel="shortcut icon" href="/images/favicon.ico">
        
-        <meta name="fullcss"  content="/css/enhanced.css">
-    
+        <meta name="fullcss"  content="/css/base.css">
             @include('layouts.partials.critical')
             @include('layouts.partials.enhance')
 
 
     </head>
     <body>
-
         <div class="header">
-            <h1 class="">Temporary<span class="header__title--colored"> Zone</span></h1>
-            @include('layouts.partials.nav')
-
-            
-
+            <!-- <h1 class="">Temporary<span class="header__title--colored"> Zone</span></h1> -->
+             @include('layouts.partials.nav')
         </div>
 
         <div class="container clearfix">

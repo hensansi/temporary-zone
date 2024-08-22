@@ -14,7 +14,7 @@ a { color: #000; border-bottom: 1px dotted #000; text-decoration: none; backgrou
 
 a:hover { color: #00F; border-bottom: 1px dotted #00F; }
 
-.header { font-size: 1.5em; margin-left: 10%; margin-top: 4%; padding-bottom: 4%; }
+.header { font-size: 1.5em; margin-left: 10%; margin-top: 4%;  }
 
 .header h1 { padding-bottom: 0.2em; color: #00F; }
 
@@ -38,7 +38,7 @@ img { width: 100%; }
 
 .stripe__title { border-bottom: none; margin-left: 0px; color: rgba(50, 50, 50, 0.95); background: rgba(255, 255, 255, 0.75); font-size: 1.4em; font-weight: 500; padding: 0.25em 0.4em 0.25em 0em; line-height: 120%; }
 
-.stripe { margin-bottom: 10%; text-transform: uppercase; }
+.stripe { text-transform: uppercase; }
 
 .box p { font-size: 1.375em; font-weight: 300; line-height: 145%; }
 
