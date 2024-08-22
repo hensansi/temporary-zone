@@ -6,8 +6,7 @@
         <meta name="description" content="Henrique Silva temporary and in ever evolution portfolio">
         <link rel="shortcut icon" href="/images/favicon.ico">
        
-        <meta name="fullcss"  content="/css/enhanced.css">
-    
+        <meta name="fullcss"  content="/css/base.css">
             <style>
 /* base.scss PUT VISIBILITY IN JAVASCRITP */
 
@@ -24,7 +23,7 @@ a { color: #000; border-bottom: 1px dotted #000; text-decoration: none; backgrou
 
 a:hover { color: #00F; border-bottom: 1px dotted #00F; }
 
-.header { font-size: 1.5em; margin-left: 10%; margin-top: 4%; padding-bottom: 4%; }
+.header { font-size: 1.5em; margin-left: 10%; margin-top: 4%;  }
 
 .header h1 { padding-bottom: 0.2em; color: #00F; }
 
@@ -48,7 +47,7 @@ img { width: 100%; }
 
 .stripe__title { border-bottom: none; margin-left: 0px; color: rgba(50, 50, 50, 0.95); background: rgba(255, 255, 255, 0.75); font-size: 1.4em; font-weight: 500; padding: 0.25em 0.4em 0.25em 0em; line-height: 120%; }
 
-.stripe { margin-bottom: 10%; text-transform: uppercase; }
+.stripe { text-transform: uppercase; }
 
 .box p { font-size: 1.375em; font-weight: 300; line-height: 145%; }
 
@@ -131,7 +130,7 @@ function loadCSS( href, before, media ){
 	return ss;
 }
 
-  loadCSS( "/css/enhanced.css" );
+  loadCSS( "/css/app.css" );
 
  }
 
@@ -141,25 +140,21 @@ function loadCSS( href, before, media ){
 
     </head>
     <body>
-
         <div class="header">
-            <h1 class="">Temporary<span class="header__title--colored"> Zone</span></h1>
-            <div class="nav">
+            <!-- <h1 class="">Temporary<span class="header__title--colored"> Zone</span></h1> -->
+             <div class="nav">
     <ul>
         <li><a href="/work" class="colored-link">work</a></li>
         <li><a href="/me" class="colored-link">me</a></li>
         <li><a href="/contact" class="colored-link">contact</a></li>
     </ul>
 </div>
-
-            
-
         </div>
 
         <div class="container clearfix">
             <div class="stripe-list-container">
                     <div class="stripe clearfix">
-            
+            <div class="stripe__thumbnail" style="background-image:url(/./images/web/thumbnails/glomeradados.jpg)"></div>
             <div class="stripe__title">
                 <a href="/work/glomeradados">
                     <h2>Glomeradados - Databases</h2>
@@ -169,7 +164,7 @@ function loadCSS( href, before, media ){
             
         </div>
                 <div class="stripe clearfix">
-            
+            <div class="stripe__thumbnail" style="background-image:url(/./images/web/thumbnails/data_visualization.jpg)"></div>
             <div class="stripe__title">
                 <a href="/work/data_visualization">
                     <h2>Data Visualization in Social Network</h2>
@@ -179,7 +174,7 @@ function loadCSS( href, before, media ){
             
         </div>
                 <div class="stripe clearfix">
-            
+            <div class="stripe__thumbnail" style="background-image:url(/./images/web/thumbnails/releituras.jpg)"></div>
             <div class="stripe__title">
                 <a href="/work/releituras">
                     <h2>Releituras -  Archive of Concrete Poetry</h2>
@@ -189,7 +184,7 @@ function loadCSS( href, before, media ){
             
         </div>
                 <div class="stripe clearfix">
-            
+            <div class="stripe__thumbnail" style="background-image:url(/./images/web/thumbnails/exp.jpg)"></div>
             <div class="stripe__title">
                 <a href="/work/exp">
                     <h2>EXP - TV Channel Identity</h2>
@@ -199,7 +194,7 @@ function loadCSS( href, before, media ){
             
         </div>
                 <div class="stripe clearfix">
-            
+            <div class="stripe__thumbnail" style="background-image:url(/./images/web/thumbnails/newsletter.jpg)"></div>
             <div class="stripe__title">
                 <a href="/work/newsletter">
                     <h2>Free Seasonal Publication - DEI/CISUC</h2>
@@ -209,7 +204,7 @@ function loadCSS( href, before, media ){
             
         </div>
                 <div class="stripe clearfix">
-            
+            <div class="stripe__thumbnail" style="background-image:url(/./images/web/thumbnails/queima24.jpg)"></div>
             <div class="stripe__title">
                 <a href="/work/queima24">
                     <h2>Queima 24! - Short Film Contest</h2>
