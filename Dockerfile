@@ -34,7 +34,8 @@ RUN curl -sS https://getcomposer.org/download/2.7.7/composer.phar -o composer.ph
 WORKDIR /app
 
 #RUN composer create-project laravel/laravel migration "6.0.*" --prefer-dist
-COPY ./migration /app
+COPY ./ /app
 RUN composer update
+
 #RUN php artisan key:generate
 
