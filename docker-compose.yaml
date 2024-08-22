@@ -14,6 +14,8 @@ services:
       DB_USERNAME: homestead
       DB_PASSWORD: secret
       DB_CONNECTION: pgsql
+      APP_DEBUG: true
+      APP_KEY: c9152a0bf3952537320e9ff22024b8d8
   db:
     image: postgres:9.6
     environment:

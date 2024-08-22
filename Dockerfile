@@ -26,16 +26,12 @@ RUN docker-php-ext-configure pcntl --enable-pcntl &&\
     zip \
     pdo_pgsql
 
-# Install Composer 2.2.24 (June 2024)
+# Install Composer 2.7.7 (June 2024)
 RUN curl -sS https://getcomposer.org/download/2.7.7/composer.phar -o composer.phar &&\
     mv composer.phar /usr/local/bin/composer &&\
     chmod +x /usr/local/bin/composer
 
 WORKDIR /app
 
-#RUN composer create-project laravel/laravel migration "6.0.*" --prefer-dist
-COPY ./ /app
-RUN composer update
-
-#RUN php artisan key:generate
-
+COPY ./ /app/
+RUN composer install
