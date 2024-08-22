@@ -10,7 +10,7 @@
                 <h3>Client: {{ $item->client }}</h3>
                 <p>{{ $item->descricao }}</p>
                 {{-- <img src="{{ asset('images/web/' . $item->a . '.jpg') }}" alt="{{ $item->name }}"> --}}
-                <h3>Website: <a href="http://{{ $item->url }}" target="_blank">{{ $item->url }}</a></h3>
+                <h3>Website: <a href="https://{{ $item->url }}" target="_blank">{{ $item->url }}</a></h3>
             </div>
         @endforeach
 
