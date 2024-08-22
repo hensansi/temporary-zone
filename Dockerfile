@@ -1,4 +1,4 @@
-FROM php:5.6.40-cli-stretch
+FROM php:7.1.33-cli-stretch
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Replace repos in archive as release is EOL
@@ -35,3 +35,5 @@ WORKDIR /app
 
 COPY ./ /app
 RUN composer install
+#RUN php artisan key:generate
+
