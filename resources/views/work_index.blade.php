@@ -4,7 +4,7 @@
 <div class="stripeList">
     @foreach ($categories as $category)
     <div class="cf stripe">
-        <a href="{{ url('work/' . strtolower($category->name)) }}">
+        <a href="{{ route('work.slug', strtolower($category->name), [], false) }}">
             <div class="stripe_bg" style="background-image:url({{ asset('images/' . $category->name . '.jpg') }})">
                 <h1>{{ $category->name }}</h1>
             </div>

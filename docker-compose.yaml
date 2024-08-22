@@ -16,6 +16,7 @@ services:
       DB_CONNECTION: pgsql
       APP_DEBUG: true
       APP_KEY: c9152a0bf3952537320e9ff22024b8d8
+      ASSET_URL: "/."
   db:
     image: postgres:9.6
     environment:

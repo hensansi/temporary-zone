@@ -7,7 +7,7 @@
         <div class="stripe clearfix">
             {{-- <div class="stripe__thumbnail" style="background-image:url({{ asset('images/web/thumbnails/' . $work->a . '.jpg') }})"></div> --}}
             <div class="stripe__title">
-                <a href="{{ route('work.slug', $work->a) }}">
+                <a href="{{ route('work.slug', $work->a, false) }}">
                     <h2>{{ $work->name }}</h2>
                 </a>
             </div>
