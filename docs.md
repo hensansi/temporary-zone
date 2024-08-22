@@ -11,6 +11,7 @@ sudo docker build -t $image .
 container_id=$(sudo docker create "$image")
 sudo docker cp "$container_id:$source_path" "$destination_path"
 sudo docker rm "$container_id"
+sudo chown -R $USER:$USER $destination_path
 ```
 
 ## Export project to statuic files
